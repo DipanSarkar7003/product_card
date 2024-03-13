@@ -1,0 +1,185 @@
+*{
+    margin: 0;
+    padding: 0;
+    background: hsl(30, 38%, 92%);
+}
+.container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    
+    
+}
+
+
+/* <----------styling text part--------->  */
+.texPart{
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    /* text-align: center; */
+    height: 500px;
+    /* justify-content: space-evenly; */
+    width: 300px;
+    border-radius: 10px;
+}
+
+
+.p1{
+    margin-top: 30px;
+    padding-left: 40px;
+    padding-bottom: 20px;
+    background-color: white;
+    letter-spacing: 3px;
+    font-size: smaller;
+    /* font-family: 'Fraunces', serif; */
+/* font-family: 'Golos Text', sans-serif; */
+font-family: 'Montserrat', sans-serif;
+font-weight: 200;
+    color: hsl(228, 12%, 48%);
+}
+.texPart > h1 {
+    font-family: 'Fraunces', serif;
+    /* font-family: 'Golos Text', sans-serif; */
+    /* font-family: 'Montserrat', sans-serif; */
+    font-weight: 500, 700 ;
+    padding-top: 10px;
+    padding-left: 45px;
+    background-color: white;
+    padding-right: 30px;
+    
+}
+
+.para{
+    text-align: left;
+    padding-left: 45px;
+    padding-top: 30px;
+    /* font-family: 'Fraunces', serif; */
+    /* font-family: 'Golos Text', sans-serif; */
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+    color: hsl(228, 12%, 48%);
+    background-color: white;
+    padding-right: 30px;
+    line-height: 20px;
+    
+ 
+}
+
+.texPart > button{
+    /* color:hsl(158, 36%, 37%) ; */
+    background-color: hsl(158, 36%, 37%);
+    color: white;
+    width: 250px;
+    height: 50px;
+    border-radius: 8px;
+    border: 1px;
+    /* font-size: 12px; */
+    /* padding: 2px; */
+   margin-left: 10%;
+   margin-top: 30px;
+   cursor: pointer;
+
+    
+}
+.texPart > button:hover{
+    background-color:hsl(158, 44%, 25%) ;
+    /* background-color: white; */
+}
+
+.texPart > button > svg {
+    background-color: hsl(158, 39%, 36%);
+    
+    /* padding:2px; */
+    margin-right:5px ;
+    /* font-size: 12px; */
+}
+ .priceSec{
+    display: flex;
+    background-color: white;
+    /* justify-content: space-evenly; */
+    align-items: center;
+ }
+.price{
+    display: inline-block;
+    background-color: white;
+    font-size: 30px;
+    font-weight: bolder;
+    font-family: 'Fraunces', serif;
+    /* font-family: 'Golos Text', sans-serif; */
+    /* font-family: 'Montserrat', sans-serif; */
+    color:hsl(158, 36%, 37%) ;
+    padding-top: 40px;
+    padding-left: 45px;
+    padding-right: 15px;
+}
+.off{
+    background-color: white;
+    display: inline-block;
+    padding-top: 40px;
+}
+.off > s{
+    background-color: white;
+    font-size: smaller;
+     font-family: 'Fraunces', serif;
+     /* font-weight: bold; */
+    
+}
+
+/* <-------styling image part-------->  */
+
+ .img1{
+    height: 500px;
+    border-radius: 10px;
+    display:block;
+}
+.img2{
+    display: none;
+    height: 500px;
+    border-radius: 5px;
+}
+
+
+
+/* now styling for i screen weidth = 375 px  */
+
+@media only screen and (max-width: 450px) {
+  
+    /* full container part  */
+    .container{
+        display:flex;
+        flex-direction: column;
+        justify-content: center;
+
+    }
+    
+    /* image part  */
+
+    .img1 {
+      display:none;
+
+    }
+    .img2{
+        display:block;
+        width: 300px;
+        height: 200px;
+        padding-left: 12.5%;
+        padding-right: 12.5%;
+        /* align-items: center;
+        justify-content: center; */
+        
+    }
+    /* text part  */
+ 
+.texPart {
+    
+    margin-left: 12.5%;
+        margin-right: 12.5%;
+}
+  }
+
+
+  /* styling for mobile device  */
